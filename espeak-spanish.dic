@@ -1,4 +1,4 @@
 ﻿#Chris, Chromium
 \bChr\B	Cr	0	1
-#reino
-ei\B	éi	0	1
+#reino, reiniciar
+ei(\D{1}[^áéíóú]?[ns]?)\b	éi\1	0	1
