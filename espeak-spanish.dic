@@ -2,3 +2,5 @@
 \bChr\B	Cr	0	1
 #reino, reiniciar
 ei(\D{1}[^áéíóú]?[ns]?)\b	éi\1	0	1
+#desahucio, desahucian
+ahuci([aeo]{1}[ns]?)\b	auci\1	0	1
