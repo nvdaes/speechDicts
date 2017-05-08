@@ -4,3 +4,9 @@
 ei(\D{1}[^áéíóú]?[ns]?)\b	éi\1	0	1
 #desahucio, desahucian
 ahuci([aeo]{1}[ns]?)\b	auci\1	0	1
+#Lectura de números: caracteres de espacio como separador de miles.
+(?<=\d)([  ]?)(\d{3})	\2	0	1
+#Lectura de números: ignorar los miles después de un solo 0 (audio time).
+(?<=\b0)\.(\d{3})	 . \1	0	1
+#Lectura de números: decimales después de la coma como  punto decimal (*will be fixed in espeak-ng).
+(?<=\d),(\d)	 coma \1	0	1
